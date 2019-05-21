@@ -510,8 +510,8 @@ $.fn.rangeCalendar = function(options) {
 
 			var calendarHtml = '';
 			var cell;
-			var date = moment(startDate).add('days', obj.start);
-			var endDate = moment(endDate).add('days', obj.start);
+			var date = moment(startDate)/*.add('days', obj.start)*/;
+			var endDate = moment(endDate)/*.add('days', obj.start)*/;
 			var rangeWidth = obj.rangeWidth();
 			
 			for (var index = 1; (date.isBefore(endDate) || date.isSame(endDate)) ; index++){
@@ -546,8 +546,8 @@ $.fn.rangeCalendar = function(options) {
 			
 			var monthsHtml = '';
 			var cell;
-			var date = moment(startDate).add('days', obj.start);
-			var endDate = moment(endDate).add('days', obj.start);
+			var date = moment(startDate)/*.add('days', obj.start)*/;
+			var endDate = moment(endDate)/*.add('days', obj.start)*/;
 			for (var index = 1; (date.isBefore(endDate) || date.isSame(endDate)) ; index++){
 			
 				var year = date.format("YY");
